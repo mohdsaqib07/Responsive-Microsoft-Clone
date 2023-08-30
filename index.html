@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+    <link rel="shortcut icon" href="/assets/Microsoft_23401-277ad9bc.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        .bi-search::before {
+            content: "\f52a";
+            transform: scaleX(-1);
+        }
+    </style>
+
+  <link rel="stylesheet" href="/assets/index-4be6eff0.css">
+</head>
+
+<body>
+    <nav class="flex items-center md:justify-between p-2 w-screen h-[54px] box-border relative">
+        <div class="logo-left hamburger p-2 flex md:hidden">
+            <button type="button" id="mobilesearch">☰</button>
+            <i class="bi bi-search ml-4"></i>
+        </div>
+        <div class="logo mx-auto md:mx-0 md:ml-36 flex">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAAAuCAYAAABK69fpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTAwQkM2Mzk4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTAwQkM2Mzg4NDBBMTFFNjhDQkVCOTdDMjE1NkM3RkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMkM5MzFBNDcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMkM5MzFBNTcwQTExMUU2QUVERkExNDU3ODU1M0I3QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgQJy/MAAAxESURBVHja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" alt="" class="w-[108px] h-[23px]">
+            <ul class="hidden md:flex md:ml-6 md:gap-3 md:mt-1" id="leftContainer">
+                <li class="text-[13px] leading-[19.5px] text-[#262626] hover:border-b-2 hover:border-[#262626]"><a
+                        href="">MicroSoft 365</a></li>
+                <li class="text-[13px] leading-[19.5px] text-[#262626] hover:border-b-2 hover:border-[#262626]"><a
+                        href="">Teams</a></li>
+                <li class="text-[13px] leading-[19.5px] text-[#262626] hover:border-b-2 hover:border-[#262626]"><a
+                        href="">Windows</a></li>
+                <li class="text-[13px] leading-[19.5px] text-[#262626] hover:border-b-2 hover:border-[#262626]"><a
+                        href="">Surface</a></li>
+                <li class="text-[13px] leading-[19.5px] text-[#262626] hover:border-b-2 hover:border-[#262626]"><a
+                        href="">Xbox</a></li>
+                <li class="text-[13px] leading-[19.5px] text-[#262626] hover:border-b-2 hover:border-[#262626]"><a
+                        href="">Support</a></li>
+            </ul>
+            <form action="" class="ml-12 hidden" id="searchForm">
+         <input type="text" name="search" id="search" class="w-[1050px] inline border-2 border-solid border-[#0067B8] py-1 px-3 focus:border-[#0067B8] outline-none" placeholder="Search Microsoft.com">
+         <button type="button" class="border border-solid border-[#000000] bg-transparent text-black px-3 py-1" id="cancelButton">Cancel</button>
+            </form>
+        </div>
+        <div class="logo-right p-2 flex md:gap-4 md:mr-28" id="rightContainer">
+            <span class="hidden md:inline">
+                <button type="button" class="hidden md:inline text-[13px] mt-1 hover:border-b-2 hover:border-[#262626]"
+                    id="right-list1">All Microsoft</button>
+                <i class="fa fa-angle-down relative top-[2px] text-gray-500" id="search-icon1 cursor-pointer"></i>
+            </span>
+            <span class="hidden md:inline">
+                <button type="button" class="hidden md:inline text-[13px] mt-1 hover:border-b-2 hover:border-[#262626]">Search <i class="bi bi-search md:ml-1 cursor-pointer" id="searchButton"></i></button>
+            </span>
+            <span>
+                <a href="" class="hidden md:inline text-[13px] mt-1 hover:border-b-2 hover:border-[#262626]">Cart</a>
+                <i class="bi bi-cart mr-4 md:mr-0 cursor-pointer"></i>
+            </span>
+            <a href="" class="hidden md:inline text-[13px] mt-1">Sign In</a>
+            <img src="https://randomuser.me/api/portraits/thumb/men/75.jpg" alt="" class="rounded-full max-w-7 max-h-7 w-7 h-7">
+        </div>
+
+    </nav>
+    <!-- carousel for computer -->
+    <div class="hidden md:block container mx-auto w-screen box-border h-[472.625px] overflow-hidden">
+        <div id="carousel" class="relative">
+            <div class="carousel-inner">
+
+                <div class="carousel-slide opacity-100 flex relative">
+                    <div class="flex flex-col absolute z-10 w-2/4 py-40 px-28 justify-center space-y-5">
+                        <h2 class="text-[37px] font-semibold leading-[44.4px] cursor-pointer w-[471.138px] h-[44.4px] text-left">
+                            Surface Laptop 5</h2>
+                        <p class="text-[16px] leading-[24px] w-[471.138px] h-[48px] cursor-pointer">
+                            Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11
+                        </p>
+                        <button type="button" class="bg-[#0067B8] w-fit text-white text-[16px] leading-4 font-semibold pt-[10px] pb-3 pl-[10px] pr-3 mt-2">Learn
+                            More</button>
+                    </div>
+                    <img src="/assets/carouselimage1-fd85b42e.webp" alt="Image 1" class="absolute">
+                </div>
+                <div class="carousel-slide opacity-0 flex relative">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP5-1920x600"
+                        alt="Image 2" class="absolute">
+                    <div class="flex flex-col absolute z-10 w-2/4 py-40 px-28 left-2/4 top-2/4 justify-center space-y-5">
+                        <h2 class="text-[37px] font-semibold leading-[44.4px] cursor-pointer w-[471.138px] h-[44.4px] text-left">
+                            Surface Pro 9</h2>
+                        <p class="text-[16px] leading-[24px] w-[471.138px] h-[48px] cursor-pointer">
+                            Tablet versatility and laptop power — all in one ultra-portable device
+                        </p>
+                        <button type="button" class="bg-[#0067B8] w-fit text-white text-[16px] leading-4 font-semibold pt-[10px] pb-3 pl-[10px] pr-3 mt-2">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- computer carousel controller -->
+    <div class="hidden navigation-control md:flex justify-center items-center mx-auto text-center mt-2 w-full">
+        <button type="button" class="cursor-pointer focus:border-[3px] focus:border-dotted focus:border-black py-[6px] px-[12px] text-[22px] leading-[24px] text-[#171717]" id="videoButton"><i class="bi bi-play-circle"></i></button>
+        <button type="button" class="cursor-pointer focus:border-[3px] focus:border-dotted focus:border-black py-[6px] px-[12px] text-[22px] leading-[24px] text-[#171717]" id="navigationLeft">&lt;</button>
+        <span class="w-2 h-2 bg-black rounded-full mt-1 mx-3" id="navigator1"></span>
+        <span class="w-2 h-2  border border-black rounded-full mt-1 mx-3" id="navigator2"></span>
+        <button type="button" class="cursor-pointer focus:border-[3px] focus:border-dotted focus:border-black py-[6px] px-[12px] text-[22px] leading-[24px] text-[#171717]" id="navigationRight">&gt;</button>
+    </div> 
+
+    <!-- carousel for mobile -->
+    <div class="block md:hidden container w-screen mx-auto" style="box-shadow: 1px 2px 3px #ccc;" id="mobileCarousel">
+        <div id="carousel2" class="relative">
+            <div class="carousel-inner2">
+                <div class="carousel-slide2 opacity-100 flex flex-col">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP2-859x540"
+                    alt="Image 1" class="">
+                    <div class="flex flex-col justify-center px-4 space-y-4 py-3">
+                        <h2
+                            class="text-[1.5rem] font-semibold leading-[1.2] cursor-pointer w-[317px] h-[28.7969px] text-left mt-4">
+                            Surface Laptop 5</h2>
+                        <p class="text-[16px] leading-[24px] w-[317px] font-[400] h-[72px] cursor-pointer">
+                            Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11
+                        </p>
+                        <button type="button"
+                        class="bg-[#0067B8] w-fit text-white text-[16px] leading-4 font-semibold pt-[10px] pb-3 pl-[10px] pr-3 mt-2">Learn
+                        More</button>
+                    </div>
+                    
+                </div>
+                <div class="carousel-slide2 opacity-0 flex flex-col">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Laptop-5-M1-Platinum-Graphite-01-1:VP2-859x540"
+                        alt="Image 2">
+                    <div class="flex flex-col justify-center px-4 space-y-4 py-3">
+                        <h2
+                            class="text-[1.5rem] font-semibold leading-[1.2] cursor-pointer w-[317px] h-[28.7969px] text-left mt-4">
+                            Surface Pro 9</h2>
+                        <p class="text-[16px] leading-[24px] w-[317px] font-[400] h-[72px] cursor-pointer">Tablet
+                            versatility and laptop power — all in one ultra-portable device</p>
+                        <button type="button"
+                            class="bg-[#0067B8] w-fit text-white text-[16px] leading-4 font-semibold pt-[10px] pb-3 pl-[10px] pr-3 ">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile carousel controller -->
+    <div class="flex mobile-navigation-control md:hidden justify-center items-center mx-auto text-center mt-2 w-full" id="mobileNavigationControl">
+        <button type="button" class="cursor-pointer focus:border-[3px] focus:border-dotted focus:border-black py-[6px] px-[12px] text-[22px] leading-[24px] text-[#171717]" id="mobilevideoButton"><i class="bi bi-play-circle"></i></button>
+        <button type="button" class="cursor-pointer focus:border-[3px] focus:border-dotted focus:border-black py-[6px] px-[12px] text-[22px] leading-[24px] text-[#171717]" id="mobileNavigationLeft">&lt;</button>
+        <span class="w-2 h-2 bg-black rounded-full mt-1 mx-3" id="mobileNavigator1"></span>
+        <span class="w-2 h-2  border border-black rounded-full mt-1 mx-3" id="mobileNavigator2"></span>
+        <button type="button" class="cursor-pointer focus:border-[3px] focus:border-dotted focus:border-black py-[6px] px-[12px] text-[22px] leading-[24px] text-[#171717]" id="mobileNavigationRight">&gt;</button>
+    </div> 
+    <div class="hidden container border-b-2 border-black" id="itemsList">
+        <ul class="flex flex-col bg-gray-100">
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Microsoft 365</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Teams</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Windows</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Surface</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Xbox</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Suppor            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">SoftWare</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">PC & Devices</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Entertainment</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Buiseness</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Developer & IT</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">Other</a></li>
+            <li class="py-3 px-2 text-[15px] font-[400] leading-[22.5px] border border-[#eee]"><a href="">View Sitemap</a></li>
+        </ul>
+    </div>
+      <div class="thumbnail-container flex flex-col md:flex-row justify-center items-center text-center mx-auto mt-6 space-y-12 md:space-y-0 w-full md:-space-x-96 box-border">
+        <div class="container mx-auto flex flex-col items-center justify-center gap-y-2"> 
+                 <img src="data:image/webp;base64,UklGRlABAABXRUJQVlA4IEQBAABQCQCdASooACgAPhkKhEGhBHGABABhLSRYBEgNMCyBIgHUAAOMZUK/xmz1f4zZCb+JOozfirXzKk2Z/TI3PUClFYMvBybmPVRQIUep53aFLPKqAAD+//6gvzoOc6aD0PAQ2cHo5+an1HHSzzZ6LZwSzsmiU/D/u377PyKrCos/RvW6nEsmeW11TbtDlFI+j5fee5KHs/7xmAXsy0J3Rx73/vUZ/fnPYhOsvZfYUccUUC7sf+/VfvtLsQso7k5NBrKt9WwI8jPwz6r4aP/7hOL8vB34bFe5GR/9fq8Ji9fvKW/69g8KHvdvVk/8Sd95x6uNZSc6Lf3yim7WnXCMWN3wRsXhWC22MIvnWTV/OF6c+4xX8c5qedUK4lLeanGPqPsDxFYgVxHlG5H/BKv4zCf7osQLMFUHjvHjCMjHlCZ/KlgAAAA=" alt="" class="mx-auto">
+                 <a href="" class="text-[#0067b8] underline text-[16px] font-semibold">Choose Your MicroSoft 365</a>
+        </div>
+        <div class="container mx-auto flex flex-col items-center justify-center gap-y-2"> 
+                 <img src="data:image/webp;base64,UklGRmIBAABXRUJQVlA4IFYBAAAQCQCdASooACgAPhUGgkEhBqgEAFEtIAJxfyR58T9R/Hb8btQb/ZsaA0Tf8o9d3/ZvSaxY/RC/yBDv4GdjDm0BdgeodbZbSWtOlItORODD3fAA/v/+zgW3/Cgt/fikrMvp/8ivxgzgugHRFYYbWnt+nnIzZsMJdcjr1UggotS4rW3vmPGBZgEyR2bG/+hNsrhPR//nrTM1Hq5B8LNgsZsTaRpyNwZ5MdpmuOf5aTwwBS9WLzmbBVhDkO7mtYYHFVZyBdy1CY/+qYv9w/TbFgdgsZb/GduyVrCOo7AwX+Voqpz1bVuSJz9euDd//sxnzJ/3+OWX5W1+nNSR77EbYJflXvppn5tQPyAGcBXr99C/2Vf3asbt4eDIGo9kTsx9l0j2I78wwc7px/J/53+QYjvp6bjcfAf9Hmw+3FS9pj5nyf9e8nGrjAQ6RzP/4PI2sAw+bk4AAAA=" alt="" class="mx-auto">
+                 <a href="" class="text-[#0067b8] underline text-[16px] font-semibold">Explore Surface Devices</a>
+        </div>
+        <div class="container mx-auto flex flex-col items-center justify-center gap-y-2"> 
+                 <img src="data:image/webp;base64,UklGRpIBAABXRUJQVlA4IIYBAAAQCQCdASooACgAPkkejUQioaGXHAcwKASEtIAJ407z1bNCAcnjoBvQCN9cfScyuAGTtvQMkpX/ay5iuSJLYTJAPT6tD0ZfLxsebHWctzDcPAAA/v92NZX33/vebRfHUzuqPFKTkE3b96T//xXZ6t9roysPlu1jUVg/mi6SqmmTgWm3J+7JYWvgrPPMukj+aCfaG9hBkv95/C3di0VdQcitc+V1AUo60NjGxi56smw+oJj9IxCz2++95JcsJwzgwRprO7bK0MAM/AZ9DIufj0LMSOKkBrwt/nQwJXyT7Yasfid5rCYHaaol1Deff05/uCs/9UO985FetcKYJ9WykLOtAQgqv+KnlG882f/P9Las31jeAufUfTX251o/E3Yj65Z31gIZ4s+PSV3PPbPXtdFQq6YXKPQfARuGVcC4D6lQwXt4GRXcv7s6lH/n2yWGeGa5/9nvpFf0moPV709gA6sPYNHbeNULD8455Z8cqNIf/JVZPLzxBn7D9P3uBE02Trzx74nAAAA=" alt="" class="mx-auto">
+                 <a href="" class="text-[#0067b8] underline text-[16px] font-semibold">Buy Xbox games and consoles</a>
+        </div>
+        <div class="container mx-auto flex flex-col items-center justify-center gap-y-2"> 
+                 <img src="data:image/webp;base64,UklGRlABAABXRUJQVlA4IEQBAABQCQCdASooACgAPhkKhEGhBHGABABhLSRYBEgNMCyBIgHUAAOMZUK/xmz1f4zZCb+JOozfirXzKk2Z/TI3PUClFYMvBybmPVRQIUep53aFLPKqAAD+//6gvzoOc6aD0PAQ2cHo5+an1HHSzzZ6LZwSzsmiU/D/u377PyKrCos/RvW6nEsmeW11TbtDlFI+j5fee5KHs/7xmAXsy0J3Rx73/vUZ/fnPYhOsvZfYUccUUC7sf+/VfvtLsQso7k5NBrKt9WwI8jPwz6r4aP/7hOL8vB34bFe5GR/9fq8Ji9fvKW/69g8KHvdvVk/8Sd95x6uNZSc6Lf3yim7WnXCMWN3wRsXhWC22MIvnWTV/OF6c+4xX8c5qedUK4lLeanGPqPsDxFYgVxHlG5H/BKv4zCf7osQLMFUHjvHjCMjHlCZ/KlgAAAA=" alt="" class="mx-auto">
+                 <a href="" class="text-[#0067b8] underline text-[16px] font-semibold">Get Windows 11</a>
+        </div>
+      </div>
+      <div class="card-box container mx-auto my-16 flex flex-col md:flex-row items-center justify-center relative box-border md:space-x-3">
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/cardimage1-1dc29d39.webp" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Surface Laptop Studio</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]"> Flex your creative muscle on the most powerful Surface Laptop. Now available with Windows 11. </p>
+                <span class="links flex flex-row whitespace-nowrap">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px]">Learn more &#5171;</a>
+               
+            </span>
+            </div>
+        </div>
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/cardimage2-ff125901.webp" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Microsoft 365</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]">  Turn your ideas into reality, stay safer online and off, and focus on what matters most with Microsoft 365 apps.  </p>
+                <span class="links flex flex-row justify-between whitespace-nowrap" style="margin-top: 37px !important;">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px]">For One Person &#5171;</a>
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px] whitespace-nowrap mr-14">For Upto Six People &#5171;</a>
+             </span>
+            </div>
+        </div>
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/cardimage3-b7387d45.webp" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Xbox Series X</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]"> The fastest, most powerful Xbox ever. </p>
+                <span class="links flex flex-row whitespace-nowrap">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px] whitespace-nowrap">Shop Xbox Series X &#5171;</a>
+               </span>
+            </div>
+        </div>
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/cardimage4-4bd17b90.webp" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Xbox Series S</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]">  Next-gen performance in the smallest Xbox ever. </p>
+                <span class="links flex flex-row whitespace-nowrap">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px] whitespace-nowrap">Shop Xbox Series S &#5171;</a>
+               
+            </span>
+            </div>
+        </div>
+
+
+      </div>
+
+      <!-- starfield image container -->
+      <div class="starfield-container my-16 container mx-auto relative h-auto md:h-[800px] box-border flex flex-col md:flex-row">
+            <div class="starfield-image-container md:absolute container h-auto md:h-[800px]">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Games-Starfield-Key-Art:VP2-859x540" alt="starfield" class="w-full h-[220.641px] md:h-[800px] object-cover">
+        </div>
+        <div class="starfieldbody md:absolute md:z-10 flex flex-col md:left-[52%] md:top-[60%] md:ml-32 px-6 md:px-14">
+            <h2 class="text-[24px] md:text-[37px] font-semibold leading-7 md:leading-[44.4px] w-[327px] h-[57.5938px] md:h-[88.7847px] md:w-[504.028px] cursor-pointer text-left md:text-white mt-7 md:mt-0">Pre-order Starfield and play before launch</h2>
+            <p class="text-[16px] leading-[24px] font-normal text-left h-[48px] w-[327px] md:h-[24.0104px] md:w-[504.028px] cursor-pointer md:text-white my-3">Get up to 5 days early access when you buy Starfield Premium Edition.*</p>
+            <a href="" class="bg-[#0067B8] text-white pt-[10px] pb-3 pl-[10px] pr-3 text-[16px] font-semibold leading-4 w-fit my-3 md:my-6">Pre-order now</a>
+        </div>
+      </div>
+      
+
+      <!-- buiseness container -->
+      <div class="heading container mx-auto md:mb-4 mb-2 mt-0 md:mt-24">
+      <h2 class="text-[37px] font-semibold leading-[44.4px] text-left ml-0 md:-ml-8">For business</h2>
+    </div>
+      <div class="card-box container mx-auto flex flex-col md:flex-row items-center justify-center relative box-border md:space-x-3">
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/buisenesscardimage1-05e74cf5.avif" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Surface for Business</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]"> No matter what you do, there’s a Surface to help you do it.  </p>
+                <span class="links flex flex-row whitespace-nowrap">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px]">Shop now &#5171;</a>
+               
+            </span>
+            </div>
+        </div>
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/buisenesscardimage2-6cbfe841.webp" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Try Microsoft 365 for free</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]"> Get Microsoft Teams, secure cloud storage and premium apps across devices with a free one-month Microsoft 365 Business Standard trial.   </p>
+                <span class="links flex flex-row justify-between whitespace-nowrap" style="margin-top: 37px !important;">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px]">Start your free trial &#5171;</a>
+              
+             </span>
+            </div>
+        </div>
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/buisenesscardimage3-1beece31.jfif" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-6">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3"> Windows 11 for business</h2>
+                <p class="text[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]"> Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all. </p>
+                <span class="links flex flex-row whitespace-nowrap">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px] whitespace-nowrap">Learn more &#5171;</a>
+               </span>
+            </div>
+        </div>
+        <div class="card h-[408.906px] w-[406px] pt-0 pb-3 pl-0 pr-3 ml-10 md:ml-0">
+            <div class="imagecontainer">
+                <img src="/assets/buisenesscardimage4-fe0ce10a.webp" alt="">
+            </div>
+            <div class="card-body flex flex-col space-y-10">
+                <h2 class="text-[29px] font-semibold leading-[34.8px] h-[34.6979px] w-[382px] cursor-pointer mt-3">Welcome to your Windows 365 Cloud PC</h2>
+                <p class="text-[16px] leading-[24px] text-left cursor-pointer h-[48px] w-[382px]">Securely stream your Windows experience from the Microsoft cloud to any device.  </p>
+                <span class="links flex flex-row whitespace-nowrap">
+                <a href="" class="text-[16px] font-semibold leading-6 text-[#0067B8] hover:underline h-[24px] w-[110px] whitespace-nowrap">Get it today &#5171;</a>
+               </span>
+            </div>
+        </div>
+
+
+      </div>
+
+      <!-- social media desc -->
+      <div class="social-media container mx-auto my-12 flex justify-normal">
+        <p class="text-[16px] leading-[24px] text-left">Follow MicroSoft</p>
+         <ul class="flex ml-6 gap-x-6">
+            <li><a href=""><i class="bi bi-facebook text-[16px] leading-[24px]"></i></a></li>
+            <li><a href=""><i class="bi bi-twitter text-[16px] leading-[24px]"></i></a></li>
+            <li><a href=""><i class="bi bi-youtube text-[16px] leading-[24px]"></i></a></li>
+         </ul>
+      </div>
+
+       <footer class="mx-auto flex flex-col bg-[#F2F2F2] w-screen px-8 md:px-0">
+                <div class="first-lavel container mx-auto flex flex-col md:flex-row">
+                <div class="container mx-auto text-left">
+                    <h4 class="text-[15px] font-extrabold leading-[20px] text-[#616161] mt-8 mb-3">What's new</h4>
+                    <ul class="flex flex-col space-y-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft 365</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Games</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Surface Pro </a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Surface Laptop 5</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Surface Laptop Studio</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Surface Laptop Go 2</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Window 11 apps</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="container mx-auto text-left">
+                    <h4 class="text-[15px] font-extrabold leading-[20px] text-[#616161] mt-8 mb-3">Microsoft Store</h4>
+                    <ul class="flex flex-col space-y-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Account Profile</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Download Center</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">MicroSoft Store Support</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Returns</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Order Tracking</a></li>
+                 </ul>
+                </div>
+                <div class="container mx-auto text-left">
+                    <h4 class="text-[15px] font-extrabold leading-[20px] text-[#616161] mt-8 mb-3">Education</h4>
+                    <ul class="flex flex-col space-y-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft in education</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Devices for education</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Teams for Education </a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft 365 Education</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Office Education</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Educator training and developement</a></li>
+                         <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Deals for students and parents</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Azure for students</a></li>
+                    </ul>
+                </div>
+                <div class="container mx-auto text-left">
+                    <h4 class="text-[15px] font-extrabold leading-[20px] text-[#616161] mt-8 mb-3">Buiseness</h4>
+                    <ul class="flex flex-col space-y-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Cloud</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Secuirity</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Azure </a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Dynamic 365</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft 365</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Advertising</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Industry</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Teams</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="container mx-auto text-left">
+                    <h4 class="text-[15px] font-extrabold leading-[20px] text-[#616161] mt-8 mb-3">Developer & IT</h4>
+                    <ul class="flex flex-col space-y-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Developer Center</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Documentation </a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microft Learn</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Tech Community</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Azure Marketplace</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">AppSource</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Microsoft Power Platform</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Visual Studio</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="container mx-auto text-left">
+                    <h4 class="text-[15px] font-extrabold leading-[20px] text-[#616161] mt-8 mb-3">Company</h4>
+                    <ul class="flex flex-col space-y-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Careers</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">About Microsoft </a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Company news</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Privacy at Microsoft</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Investor</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Secuirity</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:text-black hover:underline"><a href="">Sustainability</a></li>
+                        </ul>
+                </div>
+            </div> 
+            <div class="second-level container mx-auto mt-12 mb-6 flex flex-col md:flex-row md:justify-between">
+                <div class="first-item flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                    <a href="" class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline"><i class="bi bi-globe-americas"></i> English (India)</a>
+                    <a href="" class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline hover:text-black">Your Privacy Choices</a>
+                </div>
+                <div class="second-item mt-4 md:mt-0">
+                    <ul class="flex flex-row flex-wrap md:space-x-6">
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline hover:text-black mr-3 md:mr-0"><a href="">Contact Microsoft</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline hover:text-black mr-3 md:mr-0"><a href="">Privacy</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline hover:text-black mr-3 md:mr-0"><a href="">Terms of Use</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline hover:text-black mr-3 md:mr-0"><a href="">Trademarks</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] hover:underline hover:text-black mr-3 md:mr-0"><a href="">About our ads</a></li>
+                        <li class="text-[11px] leading-[16px] text-left text-[#616161] cursor-text mr-3 md:mr-0">&copy; Micrsoft 2023</li>
+                    </ul>
+                </div>
+            </div>
+            </footer>
+    <script>
+        mobilesearch.onclick = function(){
+                 mobileCarousel.className = mobileCarousel.className === 'block md:hidden container w-screen mx-auto'?'hidden md:hidden container w-screen mx-auto':'block md:hidden container w-screen mx-auto';  
+                 itemsList.className = itemsList.className === 'hidden container border-b-2 border-black'?'block container border-b-2 border-black':'hidden container border-b-2 border-black';  
+                 mobilesearch.innerHTML = mobilesearch.innerHTML === '☰' ?'&#x2715;':'☰';
+                 mobileNavigationControl.className = mobileNavigationControl.className === 'flex mobile-navigation-control md:hidden justify-center items-center mx-auto text-center mt-2 w-full'?'hidden mobile-navigation-control md:hidden justify-center items-center mx-auto text-center mt-2 w-full':'flex mobile-navigation-control md:hidden justify-center items-center mx-auto text-center mt-2 w-full';
+        }
+        searchButton.onclick = function(){
+            rightContainer.className = 'logo-right p-2 hidden md:gap-4 md:mr-14'
+            leftContainer.className='hidden md:hidden md:ml-6 md:gap-3 md:mt-1';
+            searchForm.className='ml-12 block';
+        }
+        cancelButton.onclick = function(){
+            rightContainer.className = 'logo-right p-2 flex md:gap-4 md:mr-14'
+            leftContainer.className='hidden md:flex md:ml-6 md:gap-3 md:mt-1';
+            searchForm.className='ml-12 hidden';
+        }
+   </script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
